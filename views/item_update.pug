@@ -1,0 +1,21 @@
+extends layout 
+
+block content
+    h1= item.name
+    form(method="POST" action='')
+        div
+            input(type="text" name="name" value=item.name)
+        div
+            input(type="text" name="price" value=item.price)
+        div
+            input(type="number" name="stock" value=item.number_in_stock)
+        div
+            select#cars(name='category')
+                <option value="" disabled selected>Category</option>
+                each category in categories
+                    option(value=category._id) #{category.name}
+        div 
+            input(type="submit" value="Update Item")
+
+
+

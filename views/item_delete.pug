@@ -1,0 +1,13 @@
+extends layout
+
+block content 
+    div.card 
+        div.image 
+            img(src="/images/laptop.jpg", alt="image", width="400px", height="200px")
+        div.detail
+            h2(style="color:#034694")= item.name 
+            h3(style="color:red")= item.price 
+    hr
+    h3 Do you really wanna delete item: #{item.name}
+    form(method="POST" action="") 
+        input(type="submit" value="Delete Item")

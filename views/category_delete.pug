@@ -1,0 +1,15 @@
+extends layout
+
+block content 
+    h1 Do you reall wanna delete category: #{category_name}
+    if !item_list.length    
+        div.btn
+            form(method="POST" action="")
+                input(type="submit" value="Delete category") 
+    else
+        hr
+        h3 Delete these items before attempting to delete this category.
+        each item in item_list
+            h4 
+                a(href=item.url) #{item.name}
+        

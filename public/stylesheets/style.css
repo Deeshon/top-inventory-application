@@ -1,0 +1,90 @@
+html, body {
+  height: 90%;
+
+}
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  display: flex ;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.nav-bar {
+  width: 25%;
+  height: 100%;
+  border-right: 1px solid black;
+}
+
+.nav-bar h1 {
+  padding-left: 20px;  
+}
+
+.nav-bar li {
+  padding-top: 10px;
+}
+
+.content {
+  width: 75%;
+  height: 100%;
+  padding-left: 30px;
+}
+
+.content h1, .items, .categories, .card, .btn {
+  margin-left: 300px;
+}
+
+.btn {
+  margin-left: 350px;
+}
+
+form div {
+  padding-top: 20px;
+  padding-left: 300px;
+}
+
+input{
+  padding: 5px;
+  width: 500px;
+  border-radius: 10px;
+  border: 3px solid lightslategray;
+}
+
+input[type=submit] {
+  width: 200px;
+}
+
+input[type=submit]:hover {
+  cursor: pointer;
+  border: 3px solid black;
+}
+
+select {
+  padding: 5px;
+  border-radius: 50px;
+  border: 3px solid lightslategray;
+
+}
+
+.card {
+  margin-top: 50px;
+  width: 350px;
+  height: 300px;
+}
+
+.image {
+  width: 100%;
+  height: 200px;
+}
+
+.detail {
+  width: 100%;
+  height: 100px;
+}
+
+.image, .detail {
+  text-align: center;
+}

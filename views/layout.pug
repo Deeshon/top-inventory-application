@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    div.nav-bar
+      h1 Inventory Application
+      hr
+      ul
+        li 
+          a(href="/inventory") All Items
+        li 
+          a(href="/inventory/categories") All Categories
+        li 
+          a(href="/inventory/item/create") Enter new Item
+        li 
+          a(href="/inventory/category/create") Enter new Category
+        
+
+    div.content
+      block content

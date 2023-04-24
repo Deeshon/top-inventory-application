@@ -1,0 +1,15 @@
+extends layout 
+
+block content 
+    div.card 
+        div.image 
+            img(src="/images/laptop.jpg", alt="image", width="400px", height="200px")
+        div.detail
+            each item in item_detail
+                h2(style="color:#034694")= item.name 
+                h3(style="color:red")= item.price 
+    hr
+    h3
+        a(href=`/inventory/item/${id}/delete`) Delete this Item?
+    h3
+        a(href=`/inventory/item/${id}/update`) Update this Item?

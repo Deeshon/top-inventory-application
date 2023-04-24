@@ -1,0 +1,13 @@
+extends layout
+
+block content 
+    h1 Category: #{category_name}
+    div.items
+        each item in item_list 
+            h3
+                a(href=item.url) #{item.name}
+    hr
+    h3
+        a(href=`/inventory/category/${category_id}/delete`) Delete this category?
+    h3
+        a(href=`/inventory/category/${category_id}/update`) Update this category?

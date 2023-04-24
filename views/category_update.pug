@@ -1,0 +1,9 @@
+extends layout 
+
+block content 
+    h1 Update category: #{category}
+    form(method="POST" action="")
+        div
+            input(type="text" name="category" value=category)
+        div
+            input(type="submit" value="Create new Category")
